@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TAMINCONNECT Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fa;
+            color: #172033;
+        }
+
+        header {
+            background: #081b31;
+            color: white;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .status {
+            color: #54e38e;
+            font-size: 14px;
+        }
+
+        .container {
+            padding: 25px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .welcome {
+            margin-bottom: 25px;
+        }
+
+        .welcome h1 {
+            margin-bottom: 5px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 22px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .card-title {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .menu {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .menu button {
+            border: none;
+            padding: 18px;
+            border-radius: 12px;
+            background: #0b6fd3;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background: #075aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TAMINCONNECT</div>
+    <div class="status">● SYSTEM ONLINE</div>
+</header>
+
+<div class="container">
+
+    <div class="welcome">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome to your TAMINCONNECT contact center.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-title">TOTAL CAMPAIGNS</div>
+            <div class="number">0</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">TOTAL LEADS</div>
+            <div class="number">0</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">ONLINE AGENTS</div>
+            <div class="number">0</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">CALLS TODAY</div>
+            <div class="number">0</div>
+        </div>
+
+    </div>
+
+    <div class="menu">
+
+        <button>Campaigns</button>
+
+        <button>Lead Management</button>
+
+        <button>Agents</button>
+
+        <button>Dialer</button>
+
+        <button>Call History</button>
+
+        <button>Reports</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
