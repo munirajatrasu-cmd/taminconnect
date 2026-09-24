@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMINCONNECT</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #07111f, #102c4d, #07111f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .login-box {
+            width: 90%;
+            max-width: 420px;
+            padding: 35px;
+            border-radius: 22px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            backdrop-filter: blur(15px);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9db4cc;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #cbd8e6;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.12);
+            color: white;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #9aaabd;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: #1687ff;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #006edc;
+        }
+
+        .demo {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #8ea4ba;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="logo">TAMINCONNECT</div>
+
+    <div class="subtitle">
+        Predictive Dialer & Contact Center
+    </div>
+
+    <form action="/dashboard">
+
+        <label>Username</label>
+        <input
+            type="text"
+            placeholder="Enter username"
+            required
+        >
+
+        <label>Password</label>
+        <input
+            type="password"
+            placeholder="Enter password"
+            required
+        >
+
+        <button type="submit">
+            LOGIN
+        </button>
+
+    </form>
+
+    <div class="demo">
+        TAMINCONNECT • Secure Contact Center
+    </div>
+
+</div>
+
+</body>
+</html>
