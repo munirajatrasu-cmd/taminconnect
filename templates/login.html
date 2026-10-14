@@ -102,27 +102,37 @@
         Predictive Dialer & Contact Center
     </div>
 
-    <form action="/dashboard">
+    
+<form action="/" method="POST">
+    <label>Username</label>
+    <input
+        type="text"
+        name="username"
+        placeholder="Enter username"
+        autocomplete="username"
+        required
+    >
 
-        <label>Username</label>
-        <input
-            type="text"
-            placeholder="Enter username"
-            required
-        >
+    <label>Password</label>
+    <input
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        autocomplete="current-password"
+        required
+    >
 
-        <label>Password</label>
-        <input
-            type="password"
-            placeholder="Enter password"
-            required
-        >
+    <button type="submit">LOGIN</button>
+</form>
 
-        <button type="submit">
-            LOGIN
-        </button>
+{% with messages = get_flashed_messages() %}
+  {% for message in messages %}
+    <p style="color:#ff8b8b;text-align:center;">
+      {{ message }}
+    </p>
+  {% endfor %}
+{% endwith %}
 
-    </form>
 
     <div class="demo">
         TAMINCONNECT • Secure Contact Center
